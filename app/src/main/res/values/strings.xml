@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Jump Lope</string>
+    <string name="jump_count_string">飛んだ回数</string>
+    <string name="remain_time_string">残り時間</string>
+    <string name="time_guide_string">制限時間(秒)を入力してください</string>
+    <string name="count_guide_string">目標回数を入力してください。</string>
+    <string name="weight_guide_string">体重を入力してください。</string>
+    <string name="default_count_string">0</string>
+    <string name="default_time_string">00:00</string>
+    <string name="Start_string">Start</string>
+    <string name="Stop_string">Stop</string>
+    <string name="Reset_string">Reset</string>
+    <string name="Result_string">結果</string>
+    <string name="Result_goal_count_string">目標値</string>
+    <string name="Result_count_string">飛んだ回数</string>
+    <string name="Result_time_string">飛んだ時間</string>
+    <string name="Result_result_string">結果</string>
+    <string name="Result_kcal_string">kcal</string>
+    <string name="close_string">閉じる</string>
+</resources>

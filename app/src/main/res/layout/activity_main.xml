@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:keepScreenOn="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/count_guide_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jump_count_string"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/countTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_count_string"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/time_guide_textView"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/remain_time_string"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/timerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_time_string"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/targetCountEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/count_guide_string"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="#A1887F"
+                tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/timeLimitEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/time_guide_string"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="#A1887F"
+                tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/weightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/weight_guide_string"
+                android:inputType="number|numberDecimal"
+                android:minHeight="48dp"
+                android:textColorHint="#A1887F"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center|top"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/StartButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Start_string"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/StopButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Stop_string"
+                    tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/ResetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Reset_string"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/result_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/Result_string" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goal_textView"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Result_goal_count_string"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/goal_textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/result_count_textView"
+                    android:layout_width="59dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Result_count_string"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/result_count_textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/result_time_textView"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Result_time_string"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/result_time_textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_weight="1"
+                    tools:ignore="VisualLintBounds" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/result_result_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Result_result_string"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/result_result_textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    tools:ignore="VisualLintBounds" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/result_kcal_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Result_kcal_string"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/result_kcal_textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/close_string"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
