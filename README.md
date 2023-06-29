@@ -36,3 +36,5 @@ Android 13.0　以上を想定
 https://soundeffect-lab.info/agreement/
 
 # 本アプリのライセンス
+Apache License 2.0
+Copyright (c) 2023 Taiki Kobasako
