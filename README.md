@@ -37,4 +37,6 @@ https://soundeffect-lab.info/agreement/
 
 # 本アプリのライセンス
 MIT License
-Copyright (c) 2023 Taiki Kobasako
+Copyright (c) 2023 Taiki-Kobasako
+https://github.com/Taiki-Kobasako/JumpLopeApp/blob/main/LICENSE
+
